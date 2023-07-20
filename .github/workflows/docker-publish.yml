@@ -30,7 +30,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: ghcr.io/alpharecon19/k8s-lemp/php  
+          images: ghcr.io/alpharecon19/php  
 
       - name: Build and push image
         uses: docker/build-push-action@v4
