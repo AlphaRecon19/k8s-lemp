@@ -40,7 +40,6 @@ jobs:
       - name: Build and push image
         uses: docker/build-push-action@v4
         with:
-          file: ./Dockerfile
           context: "./images/php/"
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
