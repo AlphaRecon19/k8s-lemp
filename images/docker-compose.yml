@@ -1,8 +1,0 @@
-version: '3'
-
-services:
-  php:
-    image: ghcr.io/alpharecon19/k8s-lemp/php:master
-    build:
-      context: ./php
-      dockerfile: Dockerfile

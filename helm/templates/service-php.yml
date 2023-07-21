@@ -1,0 +1,15 @@
+kind: Service 
+apiVersion: v1 
+metadata:
+  name: php
+  labels:
+    app: php
+    layer: backend
+spec:
+  type: ClusterIP
+  selector:
+    app: php
+  ports:
+    - port: 9000
+      targetPort: 9000
+      protocol: TCP
